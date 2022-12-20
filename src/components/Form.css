@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-div{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.radio-button{
+    opacity: 0;
+    border: none;
+    outline: none;
+    position: absolute;
+}
+
+label{
+    display: block;
+    text-align: center;
+    line-height: 2.9rem;
+    color: hsl(0, 0%, 100%);
+    font-family:'Overpass', sans-serif;
+    font-size: 13px;
+    background-color: hsla(216, 12%, 54%, 0.158);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: 0.5s ease-in;
+}
+
+label:hover{
+    background-color: hsl(216, 12%, 54%);
+    cursor: pointer;
+}
+
+input:focus + label{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit-div{
+    width: 100%;
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.submit-btn{
+    font-family: 'Overpass', sans-serif;
+    border-radius: 25px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    padding: 14px 110px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
