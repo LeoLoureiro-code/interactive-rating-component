@@ -9,7 +9,7 @@ const Card = (props) =>{
         <div className= 'card'>
         <Circlestar/>
         <Text/>
-        <Form inputvalue = {props.inputvalue} handleChange = {props.handleChange}/>
+        <Form inputvalue = {props.inputvalue} handleChange = {props.handleChange} showThankYouMessage = {props.showThankYouMessage}/>
         </div>
     )
 }

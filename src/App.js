@@ -7,14 +7,18 @@ const App = () => {
   const [inputvalue, setInputvalue] = useState('')
   
   const handleChange = (e) =>{
-    e.preventDefault()
     setInputvalue(e.target.value)
+    
+  }
+
+  const showThankYouMessage = (e) =>{
+    e.preventDefault()
     console.log(inputvalue)
   }
 
   return (
     <div className="App">
-      <Card inputvalue = {inputvalue} handleChange = {handleChange}>
+      <Card inputvalue = {inputvalue} handleChange = {handleChange} showThankYouMessage = {showThankYouMessage}>
       </Card>
     </div>
   );

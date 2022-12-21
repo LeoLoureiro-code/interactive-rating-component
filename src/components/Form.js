@@ -19,7 +19,7 @@ const Form = (props) =>{
                     <label htmlFor='5'>5</label>
                 </div>
                 <div className = 'submit-div'>
-                        <input type= 'submit' value = 'SUBMIT' className='submit-btn' />
+                        <input type= 'submit' value = 'SUBMIT' className='submit-btn' onClick={props.showThankYouMessage}/>
                     </div>
             </form>
         </div>
