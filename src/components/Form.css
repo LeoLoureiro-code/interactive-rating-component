@@ -72,3 +72,28 @@ input:focus + label{
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
 }
+
+@media screen and (min-width: 1439px) {
+    
+    .radio-div{
+        width: 95%;
+        justify-content: space-evenly;
+    }
+
+
+    label{
+        height: 50px;
+        width: 50px;
+        font-size: 15px;
+        line-height: 3.2rem;
+    }
+
+    .submit-div{
+        margin-top: 2rem;
+    }
+
+    .submit-btn{
+        padding: 13px 139px;
+
+    }
+}

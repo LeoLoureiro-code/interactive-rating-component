@@ -9,3 +9,13 @@
     flex-direction: column;
     padding: 25px 0px;
 }
+
+@media screen and (min-width: 1439px) {
+    .card{
+        border-radius: 25px;
+        margin-top: 12.3rem;
+        width: 410px;
+        height: 355px;
+        padding: 30px 0px;
+    }
+}
