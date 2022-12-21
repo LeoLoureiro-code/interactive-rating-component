@@ -1,10 +1,20 @@
+import { useState } from 'react'
 import Card from './components/Card'
 import './App.css';
 
-function App() {
+
+const App = () => {
+  const [inputvalue, setInputvalue] = useState('')
+  
+  const handleChange = (e) =>{
+    e.preventDefault()
+    setInputvalue(e.target.value)
+    console.log(inputvalue)
+  }
+
   return (
     <div className="App">
-      <Card>
+      <Card inputvalue = {inputvalue} handleChange = {handleChange}>
       </Card>
     </div>
   );

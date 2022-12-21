@@ -16,6 +16,10 @@ form{
     margin-top: 1rem;
 }
 
+/*
+    Fix radio button stay in middle because of absolute position
+*/
+
 .radio-button{
     opacity: 0;
     border: none;

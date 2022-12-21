@@ -3,12 +3,13 @@ import Circlestar from './Circlestar'
 import Text from './Text'
 import Form from './Form'
 
-const Card = () =>{
+const Card = (props) =>{
+
     return(
         <div className= 'card'>
         <Circlestar/>
         <Text/>
-        <Form />
+        <Form inputvalue = {props.inputvalue} handleChange = {props.handleChange}/>
         </div>
     )
 }
