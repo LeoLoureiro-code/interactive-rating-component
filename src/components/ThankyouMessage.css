@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.thankyou-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankyou-image{
+    height: 100px;
+    width: 140px;
+    margin-top: 0.5rem;
+}
+
+.thankyou-background{
+    background-color:  hsla(216, 12%, 8%, 0.493);
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color: hsl(25, 97%, 53%);
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family:'Overpass', sans-serif;
+}
+
+.thankyou-title{
+    margin: 0;
+    margin-top: 1.8rem;
+}
+
+.thankyou-par{
+    margin: 0;
+    text-align: center;
+    margin-left: 2.1rem;
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1339px) {
+
+    .thankyou-image{
+        height: 120px;
+        width: 160px;
+        margin-top: 0.5rem;
+    }
+
+    .thankyou-background{
+        margin-top: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .thankyou-par{
+        margin-left: 1.7rem;
+        font-size: 16px;
+    }
+}

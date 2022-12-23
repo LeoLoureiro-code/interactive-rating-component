@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import Card from './components/Card'
+
 import './App.css';
 
 
 const App = () => {
+
+  const [pickrating, setPickrating] = useState('false')
   const [inputvalue, setInputvalue] = useState('')
   
   const handleChange = (e) =>{
@@ -13,15 +16,23 @@ const App = () => {
 
   const showThankYouMessage = (e) =>{
     e.preventDefault()
-    console.log(inputvalue)
+    if(inputvalue !== ''){
+      setPickrating(true)
+    }
   }
 
   return (
     <div className="App">
-      <Card inputvalue = {inputvalue} handleChange = {handleChange} showThankYouMessage = {showThankYouMessage}>
-      </Card>
+        <Card 
+        pickrating = {pickrating}
+        inputvalue = {inputvalue} 
+        handleChange = {handleChange} 
+        showThankYouMessage = {showThankYouMessage}
+        >
+        </Card>
+      )
     </div>
-  );
+  )
 }
 
 export default App;
