@@ -71,7 +71,6 @@ const Form = (props) => {
                         value='SUBMIT'
                         className='submit-btn'
                         onClick={props.showThankYouMessage}
-                        pickrating={props.pickrating}
                     />
                 </div>
             </form>
